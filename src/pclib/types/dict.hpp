@@ -18,7 +18,10 @@ public:
         this->value = std::map<T, U>();
     }
     Dict(std::initializer_list<std::pair<T, U>> list) : pObject("dict") {
-        this->value = std::map<T, U>(list);
+        for (auto pair : list) {
+            this->value.insert(pair);
+        }
+
     }
     U operator[](T key) {
         return this->value[key];

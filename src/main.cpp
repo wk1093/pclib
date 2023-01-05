@@ -16,7 +16,7 @@ int main(void) {
     print(d);
     print(e);
 
-    Dict<Str, Int> f = std::map<Str, Int> {
+    Dict<Str, Int> f = {
         {"a", 1},
         {"b", 2},
         {"c", 3},
@@ -26,7 +26,7 @@ int main(void) {
     print(f["a"]);
     print(f["e"]);
 
-    Dict<Int, Str> g = std::map<Int, Str> {
+    Dict<Int, Str> g = {
         {1, "a"},
         {2, "b"},
         {3, "c"},
